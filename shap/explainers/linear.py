@@ -41,7 +41,7 @@ class LinearExplainer(Explainer):
     def __init__(self, model, data, nsamples=1000, feature_dependence=None):
         self.nsamples = nsamples
         if feature_dependence == "interventional":
-            warnings.warn('The option feature_dependence="interventional" is has been renamed to feature_dependence="independent"!')
+            warnings.warn('The option feature_dependence="interventional" has been renamed to feature_dependence="independent"!')
             feature_dependence = "independent"
         elif feature_dependence is None:
             warnings.warn('The default value for feature_dependence has been changed to "independent"!')
